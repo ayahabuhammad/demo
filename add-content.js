@@ -12,9 +12,9 @@ else if (numofppl <= 15 && numofppl >8)
 var orderdetails=" Cake Size : Large <br> Price: 25 JD"
 }
 
-var kindsweet=prompt("What do you want Cake or cookies?");
+var kindsweet=prompt("What do you want cake or cookies?");
 
-while (kindsweet != "cake " && kindsweet !="cookie")
+while (kindsweet != "cake "  || kindsweet !="cookie")
     {
          kindsweet=prompt("What do you want Cake or cookies?");
      }
