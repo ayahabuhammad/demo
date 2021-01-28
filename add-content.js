@@ -1,5 +1,7 @@
  var numofppl = prompt("How many people will your cake feed? ");
- if (numofppl <= 3 && numofppl > 0) {
+
+ if (numofppl <= 3 && numofppl > 0)
+  {
      var orderdetails = " Cake Size : Small <br> Price: 5 JD"
  }
  else if (numofppl <= 8 && numofppl > 3) {
@@ -11,8 +13,9 @@
 
 var kindsweet = prompt("What do you want cake or cookie?");
 
+
 while (kindsweet !== "cake" && kindsweet !== "cookie") {
-    kindsweet = prompt("What do you want Cake or cookie?");
+    kindsweet = prompt("What do you want cake or cookie?");
 }
 
  var itemkindsweet = '';
@@ -36,6 +39,7 @@ while (kindsweet !== "cake" && kindsweet !== "cookie") {
  }
 
  document.write(result);
+
  document.write(orderdetails);
 
 
