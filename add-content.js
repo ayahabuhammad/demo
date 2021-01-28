@@ -1,44 +1,43 @@
-var  numofppl=prompt("How many people will your cake feed? ");
-if (numofppl <= 3 && numofppl >0)
- {
-var orderdetails=" Cake Size : Small <br> Price: 5 JD"
+ var numofppl = prompt("How many people will your cake feed? ");
+ if (numofppl <= 3 && numofppl > 0) {
+     var orderdetails = " Cake Size : Small <br> Price: 5 JD"
+ }
+ else if (numofppl <= 8 && numofppl > 3) {
+     var orderdetails = " Cake Size : Meduim <br> Price: 10 JD"
+ }
+ else if (numofppl <= 15 && numofppl > 8) {
+     var orderdetails = " Cake Size : Large <br> Price: 25 JD"
+ }
+
+var kindsweet = prompt("What do you want cake or cookie?");
+
+while (kindsweet !== "cake" && kindsweet !== "cookie") {
+    kindsweet = prompt("What do you want Cake or cookie?");
 }
-else if (numofppl <= 8 && numofppl >3)
-{
-var orderdetails=" Cake Size : Meduim <br> Price: 10 JD"
+
+ var itemkindsweet = '';
+  
+ if (kindsweet === "cake") {
+     itemkindsweet = '<img src= "images/cake.jpg">' ;
+     
 }
-else if (numofppl <= 15 && numofppl >8)
-{
-var orderdetails=" Cake Size : Large <br> Price: 25 JD"
-}
+ else if (kindsweet === "cookie") {
+     itemkindsweet = '<img src="images/cookie.jpg">';
+ }
 
-var kindsweet=prompt("What do you want cake or cookies?");
+ 
+ var numofppl = prompt("How many people will your cake feed?");
 
-while (kindsweet !== "cake "  &&  kindsweet !=="cookie")
-    {
-         kindsweet=prompt("What do you want Cake or cookies?");
-     }
+ var result = '';
 
-     var itemkindsweet = '';
-if (itemkindsweet === "cake")
-    {
-       itemkindsweet = '<img src ="images/cake.jpg"/>';
+ for (var i=0; i<numofppl; i++) {
+     
+     result = result + itemkindsweet;
+ }
 
-    }
-else if (itemkindsweet === "cookie")
-    {
-        itemkindsweet = '<img src ="images/cookie.jpg"/>';
-    }  
-        var numofppl=prompt("How many people will your cake feed?");
-        var result ='';
-for (var i = 0; i < numofppl; i++ )
-    {
-       result = result + itemkindsweet;
-    }
-
-document.write(result);
-document.write(orderdetails);
+ document.write(result);
+ document.write(orderdetails);
 
 
-confirm("Hope you like our service ")
-alert("Thank You And Have A GOOD Day")
+ confirm("Hope you like our service ")
+ alert("Thank You And Have A GOOD Day")
