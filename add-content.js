@@ -20,12 +20,12 @@ while (kindsweet != "cake "  &&  kindsweet !="cookie")
      }
 
      var itemkindsweet = '';
-if (kindsweet === "cake")
+if (itemkindsweet === "cake")
     {
        itemkindsweet = '<img src ="images/cake.jpg"/>';
 
     }
-else if (kindsweet === "cookie")
+else if (itemkindsweet === "cookie")
     {
         itemkindsweet = '<img src ="images/cookie.jpg"/>';
     }  
