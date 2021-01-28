@@ -29,7 +29,7 @@ else if (kindsweet === "cookie")
     {
         itemkindsweet = '<img src ="images/cookie.jpg"/>';
     }  
-
+        var numofppl=prompt("How many people will your cake feed?");
         var result ='';
 for (var i = 0; i < numofppl; i++ )
     {
