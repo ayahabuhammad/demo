@@ -12,24 +12,25 @@ else if (numofppl <= 15 && numofppl >8)
 var orderdetails=" Cake Size : Large <br> Price: 25 JD"
 }
 
-     var kindsweet = prompt("What do you want Cake or cookies?");
+var kindsweet=prompt("What do you want Cake or cookies?");
+
 while (kindsweet != "cake " && kindsweet !="cookie")
     {
-         kindsweet = prompt("What do you want Cake or cookies?");
+         kindsweet=prompt("What do you want Cake or cookies?");
      }
 
-     var itemkindsweet = "";
+     var itemkindsweet = '';
 if (kindsweet === "cake")
     {
-       itemkindsweet = <img src ="images/cake.jpg"/>;
+       itemkindsweet = '<img src ="images/cake.jpg"/>';
 
     }
 else if (kindsweet === "cookie")
     {
-        itemkindsweet = <img src ="images/cookie.jpg"/>;
+        itemkindsweet = '<img src ="images/cookie.jpg"/>';
     }  
 
-        var result ="";
+        var result ='';
 for (var i = 0; i < numofppl; i++ )
     {
        result = result + itemkindsweet;
@@ -37,6 +38,7 @@ for (var i = 0; i < numofppl; i++ )
 
 document.write(result);
 document.write(orderdetails);
+
 
 confirm("Hope you like our service ")
 alert("Thank You And Have A GOOD Day")
