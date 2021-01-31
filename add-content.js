@@ -22,11 +22,11 @@ while (kindsweet !== 'cake' && kindsweet !== 'cookie')
  var itemkindsweet = '';
   
  if (kindsweet === 'cake') {
-     itemkindsweet = '<img src= "images/cake.jpg" border="0" wedith="300">' ;
+     itemkindsweet = '<img src= "images/cake.jpg" border="0" width="300"px>' ;
      
 }
  else if (kindsweet === 'cookie') {
-     itemkindsweet = '<img src="images/cookie.jpg"border="0" wedith="300">';
+     itemkindsweet = '<img src="images/cookie.jpg"border="0" width="300px">';
  }
 
  
@@ -59,7 +59,7 @@ never run in broedier
      var username = prompt('Enter your name?');
      console.log(username);
      console.log(typeof prompt);
-     
+
     for (var i=0; i<=5; i++)
         {
             console.log(i);
