@@ -2,13 +2,13 @@
 
  if (numofppl <= 3 && numofppl > 0)
   {
-     var orderdetails = " Cake Size : Small <br> Price: 5 JD"
+     var orderdetails = " Cake Size : Small <br> Price: 5 JD text-align: center"
  }
  else if (numofppl <= 8 && numofppl > 3) {
-     var orderdetails = " Cake Size : Meduim <br> Price: 10 JD"
+     var orderdetails = " Cake Size : Meduim <br> Price: 10 JD text-align: center "
  }
  else if (numofppl <= 15 && numofppl > 8) {
-     var orderdetails = " Cake Size : Large <br> Price: 25 JD"
+     var orderdetails = " Cake Size : Large <br> Price: 25 JD text-align: center"
  }
 
 var kindsweet = prompt("What do you want cake or cookie?");
@@ -30,7 +30,7 @@ while (kindsweet !== 'cake' && kindsweet !== 'cookie')
  }
 
  
- var numofppl = prompt("How many people will your cake feed?");
+ //var numofppl = prompt("How many people will your cake feed?");
 
  var result = '';
 
@@ -38,9 +38,8 @@ while (kindsweet !== 'cake' && kindsweet !== 'cookie')
      
      result = result + itemkindsweet;
  }
-
+ alert(username);
  document.write(result);
-
  document.write(orderdetails);
 
 
@@ -71,5 +70,4 @@ never run in broedier
      getName();
 
      document.write(username);
-     alert(username);
-
+     
