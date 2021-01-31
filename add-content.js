@@ -14,18 +14,19 @@
 var kindsweet = prompt("What do you want cake or cookie?");
 
 
-while (kindsweet !== "cake" && kindsweet !== "cookie") {
-    kindsweet = prompt("What do you want cake or cookie?");
+while (kindsweet !== 'cake' && kindsweet !== 'cookie')
+ {
+    kindsweet=prompt("What do you want cake or cookie?");
 }
 
  var itemkindsweet = '';
   
- if (kindsweet === "cake") {
-     itemkindsweet = '<img src= "images/cake.jpg">' ;
+ if (kindsweet === 'cake') {
+     itemkindsweet = '<img src= "images/cake.jpg" border="0" wedith="300">' ;
      
 }
- else if (kindsweet === "cookie") {
-     itemkindsweet = '<img src="images/cookie.jpg">';
+ else if (kindsweet === 'cookie') {
+     itemkindsweet = '<img src="images/cookie.jpg"border="0" wedith="300">';
  }
 
  
@@ -33,7 +34,7 @@ while (kindsweet !== "cake" && kindsweet !== "cookie") {
 
  var result = '';
 
- for (var i=0; i<numofppl; i++) {
+ for (var i=0; i < numofppl; i++) {
      
      result = result + itemkindsweet;
  }
@@ -45,3 +46,30 @@ while (kindsweet !== "cake" && kindsweet !== "cookie") {
 
  confirm("Hope you like our service ")
  alert("Thank You And Have A GOOD Day")
+
+ /* many line comment 
+
+never run in broedier
+*/
+
+ // function decleration
+ 
+ function getName()
+  {
+     var username = prompt('Enter your name?');
+     console.log(username);
+     console.log(typeof prompt);
+     
+    for (var i=0; i<=5; i++)
+        {
+            console.log(i);
+        }
+  }
+
+// function calling 
+
+     getName();
+
+     document.write(username);
+     alert(username);
+
