@@ -2,13 +2,15 @@
 
  if (numofppl <= 3 && numofppl > 0)
   {
-     var orderdetails = " Cake Size : Small <br> Price: 5 JD t"
+     var orderdetails = " Cake Size : Small <br> Price: 5 JD";
  }
- else if (numofppl <= 8 && numofppl > 3) {
-     var orderdetails = " Cake Size : Meduim <br> Price: 10 JD  "
+ else if (numofppl <= 8 && numofppl > 3)
+  {
+     var orderdetails = " Cake Size : Meduim <br> Price: 10 JD";
  }
- else if (numofppl <= 15 && numofppl > 8) {
-     var orderdetails = " Cake Size : Large <br> Price: 25 JD "
+ else if (numofppl <= 15 && numofppl > 8)
+  {
+     var orderdetails = " Cake Size : Large <br> Price: 25 JD";
  }
 
 var kindsweet = prompt("What do you want cake or cookie?");
@@ -22,15 +24,15 @@ while (kindsweet !== 'cake' && kindsweet !== 'cookie')
  var itemkindsweet = '';
   
  if (kindsweet === 'cake') {
-     itemkindsweet = '<img src= "images/cake.jpg" border="0" width="300"px>' ;
+     itemkindsweet = '<img src= "images/cake.jpg" border="2" width="300"px>' ;
      
 }
  else if (kindsweet === 'cookie') {
-     itemkindsweet = '<img src="images/cookie.jpg"border="0" width="300px">';
+     itemkindsweet = '<img src="images/cookie.jpg"border="2" width="300px">';
  }
 
  
- //var numofppl = prompt("How many people will your cake feed?");
+ var numofppl = prompt("How many people will your cake feed?");
 
  var result = '';
 
@@ -38,7 +40,7 @@ while (kindsweet !== 'cake' && kindsweet !== 'cookie')
      
      result = result + itemkindsweet;
  }
- alert(username);
+ 
  document.write(result);
  document.write(orderdetails);
 
@@ -53,12 +55,11 @@ never run in broedier
 
  // function decleration
  
- function getName()
-  {
-     var username = prompt('Enter your name?');
-     console.log(username);
+ function getName(){
+     var username=prompt('Enter your name?');
      console.log(typeof prompt);
-
+     console.log(username);
+     
     for (var i=0; i<=5; i++)
         {
             console.log(i);
@@ -70,4 +71,5 @@ never run in broedier
      getName();
 
      document.write(username);
-     
+     alert(username);
+     document.write(username);
