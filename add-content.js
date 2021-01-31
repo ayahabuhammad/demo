@@ -2,13 +2,13 @@
 
  if (numofppl <= 3 && numofppl > 0)
   {
-     var orderdetails = " Cake Size : Small <br> Price: 5 JD text-align: center"
+     var orderdetails = " Cake Size : Small <br> Price: 5 JD t"
  }
  else if (numofppl <= 8 && numofppl > 3) {
-     var orderdetails = " Cake Size : Meduim <br> Price: 10 JD text-align: center "
+     var orderdetails = " Cake Size : Meduim <br> Price: 10 JD  "
  }
  else if (numofppl <= 15 && numofppl > 8) {
-     var orderdetails = " Cake Size : Large <br> Price: 25 JD text-align: center"
+     var orderdetails = " Cake Size : Large <br> Price: 25 JD "
  }
 
 var kindsweet = prompt("What do you want cake or cookie?");
